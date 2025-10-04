@@ -1,0 +1,54 @@
+modid = "hierophantics_plus"
+book = "hexcasting:thehexbook"
+
+resource_dirs = [  # top takes priority
+    "resources",
+    "{$_common.src}/main/resources",
+    { path="{$_common.src}/generated/resources", required=false },
+    "{$_fabric.src}/main/resources",
+    { path="{$_fabric.src}/generated/resources", required=false },
+    "{$_forge.src}/main/resources",
+    { path="{$_forge.src}/generated/resources", required=false },
+    { modid="hexcasting" },
+    { modid="minecraft" },
+    { modid="hexdoc" },
+]
+export_dir = "src/hexdoc_hierophantics_plus/_export/generated"
+
+[template]
+icon = "{$_common.src}/main/resources/assets/hierophantics_plus/icon.png"
+include = [
+    "hierophantics_plus",
+    "hexcasting",
+    "hexdoc",
+]
+
+[template.args]
+mod_name = "Hierophantics Plus"
+author = "angelofcreation"
+show_landing_text = false
+
+[extra.hexcasting]
+# NOTE: "!Raw" means "don't apply variable interpolation to this value"
+_pattern_regex = { "!Raw"='make\("(?P<name>[^"]+)",\s*HexDir\.(?P<startdir>\w+),\s*"(?P<signature>[qweasd]+)"' }
+
+[[extra.hexcasting.pattern_stubs]]
+path = "{$_common.kotlin}/registry/HierophanticsPlusActions.kt"
+regex = "{^_pattern_regex}"
+
+# platforms
+
+[_common]
+src = "../Common/src"
+java = "{src}/main/java/io/github/angelofcreation/hierophanticsplus"
+kotlin = "{src}/main/kotlin/io/github/angelofcreation/hierophanticsplus"
+
+[_fabric]
+src = "../Fabric/src"
+java = "{src}/main/java/io/github/angelofcreation/hierophanticsplus/fabric"
+kotlin = "{src}/main/kotlin/io/github/angelofcreation/hierophanticsplus/fabric"
+
+[_forge]
+src = "../Forge/src"
+java = "{src}/main/java/io/github/angelofcreation/hierophanticsplus/forge"
+kotlin = "{src}/main/kotlin/io/github/angelofcreation/hierophanticsplus/forge"

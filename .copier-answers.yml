@@ -1,0 +1,21 @@
+# Changes here will be overwritten by Copier; NEVER EDIT MANUALLY
+# https://copier.readthedocs.io/en/stable/updating/#never-change-the-answers-file-manually
+_commit: v2.2.1
+_src_path: gh:FallingColors/hexdummy
+advanced: true
+capitalize_platforms: true
+classname: HierophanticsPlus
+default_branch: main
+description: Adds new triggers to Hierophantics.
+display_name: Hierophantics Plus
+github_repo: hierophanticsplus
+github_user: angelofcreation
+homepage_url: https://angelofcreation.github.io/hierophanticsplus
+java_package: io.github.angelofcreation.hierophanticsplus
+kotlin_package: io.github.angelofcreation.hierophanticsplus
+mappings_name: Mojmap
+minecraft_version_in_mod_version: true
+mit_license: true
+mod_version: 0.1.0
+modid: hierophantics_plus
+sources_url: https://github.com/angelofcreation/hierophanticsplus

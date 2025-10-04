@@ -1,0 +1,8 @@
+{
+  hexdoc: {
+    hierophantics_plus: {
+      title: "Hierophantics Plus Book",
+      description: "Adds new triggers to Hierophantics.",
+    },
+  }
+}
