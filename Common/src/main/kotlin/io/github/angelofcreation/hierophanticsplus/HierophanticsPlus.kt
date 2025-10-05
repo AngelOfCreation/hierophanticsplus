@@ -5,7 +5,7 @@ import org.apache.logging.log4j.LogManager
 import org.apache.logging.log4j.Logger
 import io.github.angelofcreation.hierophanticsplus.config.HierophanticsPlusServerConfig
 import io.github.angelofcreation.hierophanticsplus.networking.HierophanticsPlusNetworking
-import io.github.angelofcreation.hierophanticsplus.registry.HierophanticsPlusActions
+import io.github.angelofcreation.hierophanticsplus.registry.HierophanticsPlusPatterns
 
 object HierophanticsPlus {
     const val MODID = "hierophantics_plus"
@@ -18,9 +18,7 @@ object HierophanticsPlus {
 
     fun init() {
         HierophanticsPlusServerConfig.init()
-        initRegistries(
-            HierophanticsPlusActions,
-        )
+        HierophanticsPlusPatterns.init()
         HierophanticsPlusNetworking.init()
     }
 

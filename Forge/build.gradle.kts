@@ -58,6 +58,7 @@ hierophanticsplusModDependencies {
     requires("cloth-config")
     requires(curseforge = "hexcasting", modrinth = "hex-casting")
     requires("kotlin-for-forge")
+    requires("hierophantics")
 }
 
 dependencies {
@@ -73,6 +74,7 @@ dependencies {
     modImplementation(libs.paucal.forge)
     modLocalRuntime(libs.patchouli.forge)
     modLocalRuntime(libs.caelus)
+    modImplementation(libs.hierophantics.forge)
     modLocalRuntime(libs.inline.forge) { isTransitive = false }
 
     modApi(libs.clothConfig.forge)

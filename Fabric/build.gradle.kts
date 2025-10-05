@@ -44,6 +44,7 @@ hierophanticsplusModDependencies {
     requires(curseforge = "hexcasting", modrinth = "hex-casting")
     requires("fabric-api")
     requires("fabric-language-kotlin")
+    requires("hierophantics")
     optional("modmenu")
 }
 
@@ -69,6 +70,7 @@ dependencies {
     modLocalRuntime(libs.cardinalComponents)
     modLocalRuntime(libs.serializationHooks)
     modLocalRuntime(libs.trinkets)
+    modLocalRuntime(libs.hierophantics.fabric)
     modLocalRuntime(libs.inline.fabric) { isTransitive = false }
 
     libs.mixinExtras.fabric.also {

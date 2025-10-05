@@ -6,7 +6,9 @@
   "client": [
   ],
   "mixins": [
-    "MixinDatagenMain"
+    "MixinDatagenMain",
+    "PlayerMixin",
+    "HieroPlayerStateMixin"
   ],
   "plugin": "io.github.angelofcreation.hierophanticsplus.mixin.HierophanticsPlusMixinConfigPlugin",
   "injectors": {
